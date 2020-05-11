@@ -2,13 +2,7 @@ import { ISettingRegistry } from '@jupyterlab/settingregistry';
 
 import { StateDB } from '@jupyterlab/statedb';
 
-import { LocalStorageConnector } from '../storage';
-
 import { JSONObject, PartialJSONObject } from '@lumino/coreutils';
-
-import stripJsonComments from 'strip-json-comments';
-
-import { Router } from './router';
 
 import themesSchema from '@jupyterlab/apputils-extension/schema/themes.json';
 
@@ -17,6 +11,12 @@ import shortcutsSchema from '@jupyterlab/shortcuts-extension/schema/shortcuts.js
 import topbarSchema from 'jupyterlab-topbar-extension/schema/plugin.json';
 
 import themeToggleSchema from 'jupyterlab-theme-toggle/schema/plugin.json';
+
+import stripJsonComments from 'strip-json-comments';
+
+import { Router } from './router';
+
+import { LocalStorageConnector } from '../storage';
 
 /**
  * An interface for the plugin settings.
